@@ -37,7 +37,7 @@ namespace SignalNoise
 
         void UpdateStats(object o, EventArgs ea)
         {
-            Variance.Text = ((_gazeStats.StandardDeviation().X + _gazeStats.StandardDeviation().Y) / 2).ToString("F1");
+            Variance.Text = _gazeStats.Variance.ToString("F1");
         }
     }
 }
